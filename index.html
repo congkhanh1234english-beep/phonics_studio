@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#142c4d">
+  <meta name="description" content="Phonics Studio – ứng dụng học quy tắc phát âm tiếng Anh theo IPA Anh–Anh, 72 bài học, Word Families và thư viện hình ảnh.">
+  <title>Phonics Studio – Học phát âm tiếng Anh</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-mark">P</div>
+        <div>
+          <div class="brand-name">PHONICS STUDIO</div>
+          <div class="brand-sub">English pronunciation lab</div>
+        </div>
+      </div>
+      <div class="sidebar-label">KHÔNG GIAN HỌC TẬP</div>
+      <nav class="nav-list" aria-label="Điều hướng chính">
+        <button class="nav-item active" data-page="home"><span class="nav-icon">⌂</span><span>Tổng quan</span></button>
+        <button class="nav-item" data-page="lessons"><span class="nav-icon">▤</span><span>Lộ trình 72 bài</span><span class="nav-count">72</span></button>
+        <button class="nav-item" data-page="vowels"><span class="nav-icon">◉</span><span>Nguyên âm A–Y</span></button>
+        <button class="nav-item" data-page="families"><span class="nav-icon">▦</span><span>Word Families</span><span class="nav-count">172</span></button>
+        <button class="nav-item" data-page="rules"><span class="nav-icon">⌘</span><span>Kho quy tắc</span><span class="nav-count">164</span></button>
+        <button class="nav-item" data-page="atlas"><span class="nav-icon">▧</span><span>Thư viện ảnh</span><span class="nav-count">57</span></button>
+        <button class="nav-item" data-page="documents"><span class="nav-icon">▣</span><span>Tài liệu nguồn</span></button>
+        <button class="nav-item" data-page="practice"><span class="nav-icon">✎</span><span>Luyện tập & kiểm tra</span></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="accent-card">
+          <div class="accent-eyebrow">CHUẨN PHIÊN ÂM</div>
+          <div class="accent-main">BrE · IPA</div>
+          <p>Ưu tiên phát âm Anh–Anh. Các ngoại lệ được đánh dấu riêng.</p>
+        </div>
+        <div class="sidebar-foot">Bản học tập cá nhân · 2026</div>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <div class="mobile-brand"><span class="brand-mark small">P</span><strong>PHONICS STUDIO</strong></div>
+        <div class="topbar-left"><span class="crumb">HỌC PHÁT ÂM TIẾNG ANH</span><span class="crumb-sep">/</span><span id="page-crumb">Tổng quan</span></div>
+        <div class="topbar-actions">
+          <label class="voice-control" title="Chọn giọng đọc trên thiết bị">
+            <span>Giọng đọc</span>
+            <select id="voice-select" aria-label="Chọn giọng đọc"><option value="">Tự chọn en-GB</option></select>
+          </label>
+          <span class="brE-pill">IPA · BrE</span>
+          <button class="icon-button" id="theme-toggle" title="Đổi giao diện" aria-label="Đổi giao diện">◐</button>
+        </div>
+      </header>
+
+      <section class="page-content" id="app-content" aria-live="polite"></section>
+      <footer class="app-footer">
+        <span>PHONICS STUDIO</span>
+        <span>Học theo âm · nhận diện khuôn chữ · đọc · viết · ứng dụng</span>
+      </footer>
+    </main>
+  </div>
+  <div id="modal-root"></div>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "Phonics Studio – Học phát âm tiếng Anh",
+  "short_name": "Phonics Studio",
+  "description": "72 bài học Phonics, nguyên âm A–Y, Word Families, kho quy tắc và 57 trang ảnh.",
+  "lang": "vi",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f6f8fb",
+  "theme_color": "#142c4d",
+  "icons": [{"src":"assets/logo.svg","sizes":"any","type":"image/svg+xml","purpose":"any"}]
+}
